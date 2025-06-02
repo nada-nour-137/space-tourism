@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.responsive-bg {
+  @apply bg-bg-mobile sm:bg-bg-tablet lg:bg-bg-desktop bg-no-repeat bg-cover bg-center min-h-screen;
+}
+.responsive-bg-destination {
+  @apply bg-bg-destination-mobile sm:bg-bg-destination-tablet lg:bg-bg-destination-desktop bg-no-repeat bg-cover bg-center min-h-screen;
+}
+.responsive-bg-crew {
+  @apply bg-bg-crew-mobile sm:bg-bg-crew-tablet lg:bg-bg-crew-desktop bg-no-repeat bg-cover bg-center min-h-screen;
+}
+.responsive-bg-tech {
+  @apply bg-bg-tech-mobile sm:bg-bg-tech-tablet lg:bg-bg-tech-desktop bg-no-repeat bg-cover bg-center min-h-screen;
+}
+
+body {
+  @apply
+   m-0 p-0
+   overflow-x-hidden;
+}
+.navlink-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: white;
+  bottom: -6px; /* 6px below the link */
+  border-radius: 2px;
+  transition: width 0.3s ease;
+  width: 100%;
+  opacity: 1;
+}
+.container {
+  @apply ml-[165px] mt-12;
+}
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
